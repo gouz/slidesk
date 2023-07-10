@@ -34,6 +34,7 @@ program
   .option("--open", "open the default browser")
   .option("--save", "save the html file")
   .option("--notes", "open with speakers notes")
+  .option("--pdf", "save as a pdf")
   .description("Convert & present a talk")
   .action((talk, options) => {
     flow(talk, options, true);
