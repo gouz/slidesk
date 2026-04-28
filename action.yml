@@ -24,7 +24,7 @@ runs:
         OUTPUT_DIR: ${{ inputs.output-dir }}
       uses: docker://gouz/slidesk:latest
       with: 
-        args: slidesk -s ${{ env.OUTPUT_DIR }} ${{ env.WORKDIR }}
+        args: slidesk save ${{ env.OUTPUT_DIR }} ${{ env.WORKDIR }}
 
     - name: Verify output directory exists and is not empty
       shell: bash
